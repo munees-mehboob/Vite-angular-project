@@ -1,0 +1,11 @@
+<form [formGroup]="Login" (ngSubmit)="onsubmit()" >
+    <label for="email">enter your email</label>
+    <input type="email" formControlName="email" name="email">
+    <small *ngIf="Login.get('email')?.touched && Login.get('email')?.invalid">invalid email</small>
+    <br>
+    <br>
+    <label for="password">enter your password</label>
+    <input type="password" formControlName="password" name="password">
+    <small *ngIf="Login.get('password')?.touched && Login.get('password')?.invalid">invalid password must be 8 characters </small>
+    <button type="submit">login</button>
+</form>

@@ -1,3 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+button {
+  padding: 10px 20px;
+  background: #3aa6b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
 
 @import "tailwindcss";
