@@ -1,7 +1,14 @@
 <app-navbar></app-navbar>
 
+
 <h6 *ngIf="myname">Hello {{ myname }} </h6>
 <input type="text" [(ngModel)]="myname" placeholder="Enter your name">
+
+<br>
+<br>
+
+<h1 [@FadeInOut]="isvisible ? 'visible' : 'hidden'">angular animations</h1>
+<button (click)="toggle()">toggle</button>
 
 <ul class="list-disc pl-10">
   <li *ngFor="let item of items">{{ item }}</li>
